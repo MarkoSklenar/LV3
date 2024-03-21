@@ -62,7 +62,7 @@ public class Osoba {
 			String Mjesec = splitDatum[1];
 			String Godina = splitDatum[2];
 			
-			if(isInteger(Dan) && isInteger(Mjesec) && isInteger(Godina))
+			if(!isInteger(Dan) && !isInteger(Mjesec) && !isInteger(Godina))
 			{
 				throw new Exception("Netocan unos");
 			}
